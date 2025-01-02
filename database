@@ -1,0 +1,6 @@
+1. update mahasiswa
+    -> set alamat = 'Jl. Raya No. 5'
+    -> where NIM = '123456';
+2. select m.nim, m.nama, m.jurusan, d.dosen_pengajar from mahasiswa m join mata_kuliah d on m.nim = d.nim where m.jurusan = 'Teknik Informatika';
+3.  select nama, umur from mahasiswa order by umur desc limit 5;
+4.  select m.nama, mk.nama_mata_kuliah, mk.nilai from mahasiswa m join mata_kuliah mk on m.nim = mk.nim where mk.nilai > 70;
